@@ -5,9 +5,9 @@ config SHIELD_KTBOT
     bool
 
 config SHIELD_KTBOT_LEFT
-    def_bool $(shields_list_contains,KTBOT_left)
+    def_bool $(shields_list_contains,KTBOT)
     select SHIELD_KTBOT
 
 config SHIELD_KTBOT_RIGHT
-    def_bool $(shields_list_contains,KTBOT_right)
+    def_bool $(shields_list_contains,KTBOT)
     select SHIELD_KTBOT
