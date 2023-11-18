@@ -1,0 +1,13 @@
+# Copyright (c) 2023 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_KTBOT
+    bool
+
+config SHIELD_KTBOT_LEFT
+    def_bool $(shields_list_contains,KTBOT_left)
+    select SHIELD_KTBOT
+
+config SHIELD_KTBOT_RIGHT
+    def_bool $(shields_list_contains,KTBOT_right)
+    select SHIELD_KTBOT
